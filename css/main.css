@@ -30,12 +30,12 @@
 }
 
 *::-moz-selection { /* Code for Firefox */
-    color: var(--orange);
+    color: var(--pastel-blue);
     background: none;
 }
   
 *::selection {
-    color: var(--orange);
+    color: var(--pastel-blue);
     background: none;
 }
 
@@ -279,11 +279,13 @@ main {
 /* footer */
 .footer {
     text-align: center;
-    background-color: var(--pastel-blue);
+    background-color: var(--darker-white);
     color: var(--lighter-black);
     font-family: var(--title-font);
 
     font-size: 3rem;
+
+    margin-top: 5rem;
 
     max-height: 30vh;
     height: auto;
@@ -304,7 +306,7 @@ main {
 }
 
 .menu__item > a:hover {
-    color: var(--orange);
+    color: var(--pastel-blue);
     /* text-shadow: var(--glow) 0.0625rem 0 0.625rem; */
 }
 /*=========================== miscellaneous ===========================*/
