@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- for useful icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/railscasts.min.css"> <!-- for terminal -->
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Benjamin's Resume</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="index.html" class="nav-logo">Benjamin</a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#job" class="nav-link">Job Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#project" class="nav-link">Personal Projects</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="intro">
+            <h1 class="title"><span class="colour">Tan</span> Wei Qiang, Benjamin</h1>
+        </div>
+        <div class="terminal">
+            <pre>
+                <code class="typing">btwq97 ~ $ </code>
+            </pre>
+        </div>
+
+        <div class="callToAction">
+            <a href="resume/Tan_Wei_Qiang_Benjamin.pdf" class="button--secondary" target="_blank">Download Resume</a>
+        </div>
+
+        <div class="container">
+            <div id="job" class="job">
+                <h1 class="title"><span class="colour">Job</span> Experience</h1>
+                <div class="feature">
+                    <h3 class="company">Hydroleap Pte. Ltd.</h3>
+                    <h4 class="role">Automation Engineer Intern</h4>
+                    <h5 class="date">May 2021 - Present</h5>
+                    <ul class="desc">
+                        <li>Summation Run 7</li>
+                    </ul>
+                </div>
+                <div class="feature">
+                    <h3 class="company">Raffles Learning Lab</h3>
+                    <h4 class="role">Freelance Coding Tutor</h4>
+                    <h5 class="date">Jul 2020 - May 2021</h5>
+                    <ul class="desc"> 
+                        <li>Delivered clear and easy-to-digest contents to students from age 7 - 15.</li>
+                        <li>Prepared 
+                            <a href="https://github.com/btwq97/RLL_Notes" target="_blank">
+                                <span class="toolTip">
+                                    weekly notes
+                                    <span class="toolTipText">
+                                        Learn more
+                                    </span>
+                                </span>
+                            </a> 
+                            to facillitate better understanding amongst students.
+                        </li>
+                    </ul>
+                </div>
+                <div class="feature">
+                    <h3 class="company">Resync Technologies Pte. Ltd.</h3>
+                    <h4 class="role">Internet of Things Engineer Intern</h4>
+                    <h5 class="date">May 2020 - Dec 2020</h5>
+                    <ul class="desc">
+                        <li>Contributed immensely by revising and updating company's IoT and embedded systems.</li>
+                        <li>Developed some functionality from scratch that value-adds to their solution.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="project" class="project">
+                <h1 class="title"><span class="colour">Personal</span> Projects</h1>
+                <div class="feature">
+                    <h3 class="company">Classical Tetris</h3>
+                    <div class="gallery">
+                        <div class="row">
+                            <div class="polaroid">
+                                <img id="popImg-1" src="images/tetris-play.png" alt="Classical Tetris Loading Screen">
+                            </div>
+                            <!-- Pop up image -->
+                            <div id="myModal-1" class="modal">
+                                <span class="close">&times;</span>
+                                <img class="modal-content" id="img-1">
+                                <div id="caption-1"></div>
+                            </div>
+            
+                            <div class="polaroid">
+                                <img id="popImg-2" src="images/tetris-game.png" alt="Classical Tetris Gameplay">
+                            </div>
+                            <div id="myModal-2" class="modal">
+                                <span class="close">&times;</span>
+                                <img class="modal-content" id="img-2">
+                                <div id="caption-2"></div>
+                            </div>
+            
+                            <div class="polaroid">
+                                <img id="popImg-3" src="images/tetris-retry.png" alt="Classical Tetris Gameover">
+                            </div>
+                            <div id="myModal-3" class="modal">
+                                <span class="close">&times;</span>
+                                <img class="modal-content" id="img-3">
+                                <div id="caption-3"></div>
+                            </div>
+                        </div>
+                        <ul class="desc">
+                            <li>A game created using the Simple and Fast Multimedia Library (SFML) for the generation of window, sprite and audio modules.</li>
+                            <li>This 
+                                <a href="https://github.com/btwq97/Tetris" target="_blank">
+                                    <span class="toolTip">game<span class="toolTipText">Learn more</span></span>
+                                </a>
+                                aims to mimic the classical Tetris that we all love even till today.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="feature">
+                    <h3 class="company">Classical Race Car</h3>
+                    <div class="gallery">
+                        <div class="row">
+                            <div class="polaroid">
+                                <img id="popImg-4" src="./images/rc-play.png" alt="Race Car Loading Screen">
+                            </div>
+                            <div id="myModal-4" class="modal">
+                                <span class="close">&times;</span>
+                                <img class="modal-content" id="img-4">
+                                <div id="caption-4"></div>
+                            </div>
+            
+                            <div class="polaroid">
+                                <img id="popImg-5" src="./images/rc-loading.png" alt="Race Car Gameplay 1">
+                            </div>
+                            <div id="myModal-5" class="modal">
+                                <span class="close">&times;</span>
+                                <img class="modal-content" id="img-5">
+                                <div id="caption-5"></div>
+                            </div>
+            
+                            <div class="polaroid">
+                                <img id="popImg-6" src="./images/rc-game.png" alt="Race Car Gameplay 2">
+                            </div>
+                            <div id="myModal-6" class="modal">
+                                <span class="close">&times;</span>
+                                <img class="modal-content" id="img-6">
+                                <div id="caption-6"></div>
+                            </div>
+                        </div>
+                        <ul class="desc">
+                            <li>A game created using the Simple and Fast Multimedia Library (SFML) for the generation of window, sprite and audio modules.</li>
+                            <li>This 
+                                <a href="https://github.com/btwq97/Racing" target="_blank">
+                                    <span class="toolTip">game<span class="toolTipText">Learn more</span></span>
+                                </a>
+                                aims to mimic the classical arcade race car game that we all love even till today.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                    
+                <div class="feature">
+                    <h3 class="company">Web Design</h3>
+                    <div class="gallery">
+                        <div class="row">
+                        <div class="polaroid">
+                            <img id="popImg-7" src="./images/webpage.png" alt="Webpage">
+                        </div>
+                        <div id="myModal-7" class="modal">
+                            <span class="close">&times;</span>
+                            <img class="modal-content" id="img-7">
+                            <div id="caption-7"></div>
+                        </div>
+                    </div>
+                    <ul class="desc">
+                        <li>Picked up as a hobby when I was interested in learning how 
+                            <a href="https://github.com/btwq97/btwq97.github.io" target="_blank">
+                                <span class="toolTip">web design<span class="toolTipText">Learn more</span></span>
+                            </a>
+                            works. 
+                        </li>
+                        <li>Self learnt Hypertext Markup Language (HTML) and Cascading Stylesheet (CSS) for the sole purpose of understanding and recreating webpages from scratch.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="footer">
+        Maintained by Benjamin, 2021 &#128512;
+        <ul>
+            <li class="menu__item">
+                <a href="https://www.linkedin.com/in/tanweiqiang/" target="_blank">
+                    <i class="fa fa-linkedin" target="_blank"></i> 
+                    LinkedIn
+                </a>
+            </li>
+            <li class="menu__item">
+                <a href="https://www.github.com/btwq97" target="_blank">
+                    <i class="fa fa-github"></i> 
+                    Github
+                </a>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="script/main.js"></script>
+    <!-- for terminal -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+</body>
+</html>
