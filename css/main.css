@@ -51,6 +51,10 @@ body {
     list-style-type: square;
 }
 
+.navbar > li {
+    list-style: none;
+}
+
 /*=========================== header ===========================*/
 .header {
     position: fixed;
