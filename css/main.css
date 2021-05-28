@@ -38,6 +38,16 @@
     background: none;
 }
 
+.orange-highlight::-moz-selection {
+    color: var(--orange);
+    background: none;
+}
+
+.orange-highlight::selection {
+    color: var(--orange);
+    background: none;
+}
+
 body {
     background-color: var(--darker-white);
 }
@@ -148,6 +158,11 @@ body {
     font-weight: 500;
     color: var(--black);
     font-family: var(--logo-font);
+}
+
+.nav-logo:hover {
+    color: var(--pastel-blue);
+    text-shadow: var(--glow);
 }
 
 /*=========================== intro ===========================*/
