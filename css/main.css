@@ -47,14 +47,6 @@ body {
     color: var(--pastel-blue);
 }
 
-.desc > li {
-    list-style-type: square;
-}
-
-.navbar > li {
-    list-style: none;
-}
-
 /*=========================== header ===========================*/
 .header {
     position: fixed;
@@ -73,8 +65,8 @@ body {
     background-color: var(--darker-white);
 }
 
-.header > li.nav-item {
-    list-style: none;
+.nav-item {
+    list-style-type: none;
 }
 
 .header  a {
@@ -280,6 +272,12 @@ main {
     margin-bottom: 2rem;
 }
 
+
+.sq-bullet {
+    list-style-type: square;
+    list-style-position: inside;
+}
+
 /* footer */
 .footer {
     text-align: center;
@@ -311,7 +309,6 @@ main {
 
 .menu__item > a:hover {
     color: var(--pastel-blue);
-    /* text-shadow: var(--glow) 0.0625rem 0 0.625rem; */
 }
 /*=========================== miscellaneous ===========================*/
 .gallery {
@@ -326,7 +323,7 @@ main {
 }
 
 .gallery .row {
-	  display: flex;
+    display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     overflow-x: auto;
@@ -484,14 +481,8 @@ main {
     border-color: var(--pastel-blue) transparent transparent transparent;
 }
 /* responsiveness */
-@media screen and (max-width:1000px) {
-    .container {
-        display: flex;
-        flex-direction: column;
-    }
-}
-
-@media screen and (max-width: 735px) {
+/* tablets */
+@media screen and (max-width: 768px) {
     .nav-menu {
         position: fixed;
         left: -100%; /* to hide menu when not using */
@@ -523,10 +514,58 @@ main {
     }
 
     .hamburger.active .bar:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
+        transform: translateY(0.5rem) rotate(45deg);
     }
 
     .hamburger.active .bar:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
+        transform: translateY(-0.5rem) rotate(-45deg);
+    }
+
+    /* change title fone sizes */
+    .title {
+        font-size: 4rem;
+    }
+
+    .role {
+        font-size: 2rem;
+    }
+
+    .company, .date {
+        font-size: 1.5rem;
+    }
+
+    .desc {
+        font-size: 1rem;
+    }
+
+    /* change cta font size */
+    .callToAction > a {
+        font-size: 2.5rem;
+    }
+}
+
+/* phones */
+@media screen and (max-width: 480px) {
+    /* change title fone sizes */
+    .title {
+        font-size: 3.5rem;
+    }
+
+    .role {
+        font-size: 1.75rem;
+    }
+
+    .company, .date {
+        font-size: 1.5rem;
+    }
+
+    /* change cta font size */
+    .callToAction > a {
+        font-size: 1.75rem;
+    }
+
+    /* change footer-links */
+    .footer-links {
+        font-size: 2.5rem;
     }
 }
