@@ -443,7 +443,7 @@ main {
 .toolTip {
     position: relative;
     display: inline-block;
-    color: var(--lighter-black);
+    color: var(--pastel-blue);
     text-decoration: none;
 }
   
