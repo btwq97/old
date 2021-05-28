@@ -8,7 +8,8 @@
     --pastel-blue: rgb(58,105,169);
     --pastel-red: rgb(238,110,110);
     --orange: rgb(255,102,0);
-    --terminal-bg: rgb(35,35,35);
+    --terminal-bg: rgb(0,0,0);
+    --terminal-font-color: rgb(57, 255, 20);
     --glow: rgb(255,204,0) 0.0625rem 0 0.625rem;
     --white: rgb(255,255,255);
 
@@ -186,6 +187,11 @@ main {
 .terminal pre {
     white-space: pre-line;
     padding-top: 1rem;
+}
+
+.typing {
+    background-color: var(--terminal-bg) !important;
+    color: var(--darker-white) !important;
 }
 
 @keyframes fadeUp {
