@@ -1,21 +1,24 @@
 /* nav */
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
+const logoNav = document.querySelector(".nav-logo")
 
 hamburger.addEventListener("click", mobileMenu);
 
 function mobileMenu() {
     hamburger.classList.toggle("active");
     navMenu.classList.toggle("active");
+    logoNav.classList.toggle("active");
 }
 
-const navLink = document.querySelectorAll(".nav-link");
+const navLink = document.querySelectorAll(".nav-link, .nav-logo");
 
 navLink.forEach(n => n.addEventListener("click", closeMenu));
 
 function closeMenu() {
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
+    logoNav.classList.remove("active");
 }
 
 /* terminal */
