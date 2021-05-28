@@ -9,7 +9,7 @@
     --pastel-red: rgb(238,110,110);
     --orange: rgb(255,102,0);
     --terminal-bg: rgb(35,35,35);
-    --glow: rgb(255,204,0);
+    --glow: rgb(255,204,0) 0.0625rem 0 0.625rem;
     --white: rgb(255,255,255);
 
     --title-font: 'Squada One', cursive;
@@ -141,7 +141,7 @@ body {
 
 .nav-link:hover{
     color: var(--pastel-blue);
-    text-shadow: var(--glow) 0.0625rem 0 0.625rem;
+    text-shadow: var(--glow);
 }
 
 .nav-logo {
@@ -321,6 +321,7 @@ main {
 
 .menu__item > a:hover {
     color: var(--pastel-blue);
+    text-shadow: var(--glow);
 }
 /*=========================== miscellaneous ===========================*/
 .gallery {
