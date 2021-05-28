@@ -255,6 +255,14 @@ main {
     margin-top: 5rem;
 }
 
+#job::before, #project::before { 
+    display: block; 
+    content: " "; 
+    height: 10vh; 
+    visibility: hidden; 
+    pointer-events: none;
+  }
+
 .role {
     font-size: 2.5rem;
 }
