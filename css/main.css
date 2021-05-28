@@ -219,7 +219,7 @@ main {
 
 /* resume */
 .callToAction {
-    margin: 3rem auto 2rem auto;
+    margin: 3rem auto 0 auto;
     text-align: center;
 }
 
@@ -227,7 +227,7 @@ main {
     text-decoration: none;
 
     font-family: var(--title-font);
-    font-size: 3rem;
+    font-size: 2rem;
 
     color: var(--darker-white);
 }
@@ -281,8 +281,10 @@ main {
 .job, .project {
     max-width: 100%;
     width: 100%;
+}
 
-    margin-top: 5rem;
+.company, .role, .date, .desc {
+    margin-bottom: 1px; /* to space out more nicely between them */
 }
 
 .role {
@@ -358,13 +360,14 @@ main {
     flex-direction: row;
     flex-wrap: nowrap;
     overflow-x: auto;
+    overflow-y: hidden;
 
     /* mozilla scrollbar effect */
     scrollbar-width: thin;
 }
 
 .gallery .row .polaroid {
-    margin: 0.125rem;
+    margin: 0 0.125rem 0 0.125rem;
     padding: 0.225rem;
     border-radius: 0.325rem;
     background-color: var(--white);
@@ -471,6 +474,7 @@ main {
     cursor: pointer;
 }
 
+/* tooltips */
 .toolTip {
     position: relative;
     display: inline-block;
@@ -511,6 +515,7 @@ main {
     border-style: solid;
     border-color: var(--pastel-blue) transparent transparent transparent;
 }
+
 /* responsiveness */
 /* tablets */
 @media screen and (max-width: 768px) {
@@ -571,7 +576,7 @@ main {
 
     /* change cta font size */
     .callToAction > a {
-        font-size: 2.5rem;
+        font-size: 1.75rem;
     }
 }
 
@@ -592,7 +597,7 @@ main {
 
     /* change cta font size */
     .callToAction > a {
-        font-size: 1.75rem;
+        font-size: 1.5rem;
     }
 
     /* change footer-links */
