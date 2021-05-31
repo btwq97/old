@@ -375,11 +375,12 @@ main {
     font-family: var(--desc-font);
 }
 
-.role {
+.role, .timeline-role {
     font-size: 1.5rem;
 }
 
-.company, .date, .desc {
+.company, .date, .desc,
+.timeline-company, .timeline-date, .timeline-desc {
     font-size: 1rem;
 }
 
@@ -662,5 +663,13 @@ main {
     /* change footer-links */
     .footer-links {
         font-size: 2.5rem;
+    }
+
+    .timeline-company, .timeline-date, .timeline-desc {
+        font-size: 0.8rem;
+    }
+
+    .timeline-role {
+        font-size: 1.2rem;
     }
 }
