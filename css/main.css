@@ -373,6 +373,8 @@ main {
     border-radius: 0.375rem;
 
     font-family: var(--desc-font);
+
+    text-align: justify;
 }
 
 .role, .timeline-role {
