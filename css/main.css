@@ -500,11 +500,11 @@ main {
     margin: auto;
     display: block;
     width: 80%;
-    max-width: 700px;
+    max-width: 43.75rem;
     text-align: center;
     color: var(--darker-white);
-    padding: 10px 0;
-    height: 150px;
+    padding: 0.625rem 0;
+    height: 9.375rem;
 }
 
 /* Add Animation */
@@ -524,24 +524,6 @@ main {
 @keyframes zoom {
     from {transform:scale(0)} 
     to {transform:scale(1)}
-}
-
-/* The Close Button */
-.close {
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: var(--black);
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.close:hover,
-.close:focus {
-    color: var(--darker-white);
-    text-decoration: none;
-    cursor: pointer;
 }
 
 /* tooltips */
