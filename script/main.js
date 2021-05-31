@@ -47,6 +47,7 @@ if (document.getElementsByClassName('typing').length > 0) {
 }
 
 /* one set of modal. Any way to refactor this o.o */
+// const modal = document.querySelectorAll();
 // Get the modal
 var modal1 = document.getElementById("myModal-1");
 // Get the image and insert it inside the modal - use its "alt" text as a caption
