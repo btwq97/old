@@ -275,6 +275,11 @@ main {
     font-family: var(--desc-font);
 }
 
+.job, .project {
+    max-width: 100%;
+    width: 100%;
+}
+
 /* timeline */
 .timeline {
     position: relative;
@@ -441,6 +446,9 @@ main {
 
     /* mozilla scrollbar effect */
     scrollbar-width: thin;
+
+    margin-top: 0.625rem;
+    margin-bottom: 0.625rem;
 }
 
 .gallery .row .polaroid {
@@ -455,13 +463,7 @@ main {
 }
 
 /* pop up */
-#popImg-1,
-#popImg-2,
-#popImg-3,
-#popImg-4,
-#popImg-5,
-#popImg-6,
-#popImg-7 {
+.popImg {
     border-radius: 0.325rem;
     cursor: pointer;
     transition: 0.3s;
@@ -469,7 +471,6 @@ main {
 
 /* The Modal (background) */
 .modal {
-    display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 3; /* Sit on top */
     padding-top: 20vh; /* Location of the box */
@@ -479,6 +480,10 @@ main {
     height: 100%; 
     overflow: auto; /* Enable scroll if needed */
     background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+}
+
+.modal.hide {
+    display: none;
 }
 
 /* Modal Content (image) */
@@ -491,13 +496,7 @@ main {
 }
 
 /* Caption of Modal Image */
-#caption-1,
-#caption-2,
-#caption-3,
-#caption-4,
-#caption-5,
-#caption-6,
-#caption-7 {
+.caption {
     margin: auto;
     display: block;
     width: 80%;
@@ -510,13 +509,7 @@ main {
 
 /* Add Animation */
 .modal-content, 
-#caption-1,
-#caption-2,
-#caption-3,
-#caption-4,
-#caption-5,
-#caption-6,
-#caption-7 {
+.caption {
     -webkit-animation-name: zoom;
     -webkit-animation-duration: 0.6s;
     animation-name: zoom;

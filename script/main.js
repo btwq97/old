@@ -46,98 +46,16 @@ if (document.getElementsByClassName('typing').length > 0) {
     setTimeout(typeItOut, 1800);
 }
 
-/* one set of modal. Any way to refactor this o.o */
-// const modal = document.querySelectorAll();
-// Get the modal
-var modal1 = document.getElementById("myModal-1");
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var img1 = document.getElementById("popImg-1");
-var modalImg1 = document.getElementById("img-1");
-var captionText1 = document.getElementById("caption-1");
-img1.onclick = function(){
-  modal1.style.display = "block";
-  modalImg1.src = this.src;
-  captionText1.innerHTML = this.alt;
-};
-modal1.onclick = function() { 
-  modal1.style.display = "none";
-};
-/* =============================== */
+/* modals */
+const modal = document.querySelectorAll(".modal");
+const popImg = document.querySelectorAll(".popImg");
+const myClose = document.querySelectorAll(".close");
 
-var modal2 = document.getElementById("myModal-2");
-var img2 = document.getElementById("popImg-2");
-var modalImg2 = document.getElementById("img-2");
-var captionText2 = document.getElementById("caption-2");
-img2.onclick = function(){
-  modal2.style.display = "block";
-  modalImg2.src = this.src;
-  captionText2.innerHTML = this.alt;
-};
-modal2.onclick = function() { 
-  modal2.style.display = "none";
-};
-
-var modal3 = document.getElementById("myModal-3");
-var img3 = document.getElementById("popImg-3");
-var modalImg3 = document.getElementById("img-3");
-var captionText3 = document.getElementById("caption-3");
-img3.onclick = function(){
-  modal3.style.display = "block";
-  modalImg3.src = this.src;
-  captionText3.innerHTML = this.alt;
-};
-modal3.onclick = function() { 
-  modal3.style.display = "none";
-};
-
-var modal4 = document.getElementById("myModal-4");
-var img4 = document.getElementById("popImg-4");
-var modalImg4 = document.getElementById("img-4");
-var captionText4 = document.getElementById("caption-4");
-img4.onclick = function(){
-  modal4.style.display = "block";
-  modalImg4.src = this.src;
-  captionText4.innerHTML = this.alt;
-};
-modal4.onclick = function() { 
-  modal4.style.display = "none";
-};
-
-var modal5 = document.getElementById("myModal-5");
-var img5 = document.getElementById("popImg-5");
-var modalImg5 = document.getElementById("img-5");
-var captionText5 = document.getElementById("caption-5");
-img5.onclick = function(){
-  modal5.style.display = "block";
-  modalImg5.src = this.src;
-  captionText5.innerHTML = this.alt;
-};
-modal5.onclick = function() { 
-  modal5.style.display = "none";
-};
-
-var modal6 = document.getElementById("myModal-6");
-var img6 = document.getElementById("popImg-6");
-var modalImg6 = document.getElementById("img-6");
-var captionText6 = document.getElementById("caption-6");
-img6.onclick = function(){
-  modal6.style.display = "block";
-  modalImg6.src = this.src;
-  captionText6.innerHTML = this.alt;
-};
-modal6.onclick = function() { 
-  modal6.style.display = "none";
-};
-
-var modal7 = document.getElementById("myModal-7");
-var img7 = document.getElementById("popImg-7");
-var modalImg7 = document.getElementById("img-7");
-var captionText7 = document.getElementById("caption-7");
-img7.onclick = function() {
-  modal7.style.display = "block";
-  modalImg7.src = this.src;
-  captionText7.innerHTML = this.alt;
-};
-modal7.onclick = function() {
-  modal7.style.display = "none";
+for (let i=0; i<modal.length; i++) {
+  popImg[i].addEventListener("click", function() {
+    modal[i].classList.toggle("hide");
+  });
+  modal[i].addEventListener("click", function() {
+    modal[i].classList.toggle("hide");
+  });
 };
