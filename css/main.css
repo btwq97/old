@@ -251,10 +251,8 @@ main {
     display: flex;
     flex-direction: column;
 
-    max-width: var(--max-width);
-    width: var(--max-width);
-    margin-left: 20%;
-    margin-right: 20%;
+    max-width: 100vw;
+    width: 100vw;
 }
 
 .title {
@@ -275,9 +273,11 @@ main {
     font-family: var(--desc-font);
 }
 
-.job, .project {
-    max-width: 100%;
-    width: 100%;
+.project, .job {
+    max-width: 60%;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 /* timeline */
@@ -653,6 +653,16 @@ main {
     }
 }
 
+@media screen and (max-width: 710px) {
+    /* change job width */
+    .job {
+        max-width: 80%;
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+
 /* phones */
 @media screen and (max-width: 480px) {
     /* change cta font size */
@@ -665,16 +675,8 @@ main {
         font-size: 2.5rem;
     }
 
-    /* change title fone sizes */
+    /* change font sizes */
     .title {
         font-size: 3rem;
-    }
-
-    .timeline-company, .timeline-date, .timeline-desc {
-        font-size: 0.8rem;
-    }
-
-    .timeline-role {
-        font-size: 1.2rem;
     }
 }
