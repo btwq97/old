@@ -653,15 +653,21 @@ main {
     .callToAction > a {
         font-size: 1.75rem;
     }
-}
 
-@media screen and (max-width: 710px) {
     /* change job width */
     .job {
         max-width: 80%;
         width: 80%;
         margin-left: 10%;
         margin-right: 10%;
+    }
+
+    /* change intro and terminal widths */
+    .intro, .terminal {
+        max-width: 90%;
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
     }
 }
 
