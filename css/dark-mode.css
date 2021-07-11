@@ -20,19 +20,11 @@ body.dark,
     color: var(--dark-white);
 }
 
-.left.dark::before {
+.timeline-container.left.dark::before {
     border-color: transparent transparent transparent var(--black);
 }
 
-.right.dark::before {
-    border-color: transparent var(--black) transparent transparent;
-}
-
-/* for left pointing arrows when in smaller screen size where they do not turn black and disappear */
-.timeline-container.dark::before {
-    left: 3.8rem;
-    border: medium solid var(--black);
-    border-width: 0.625rem 0.625rem 0.625rem 0;
+.timeline-container.right.dark::before {
     border-color: transparent var(--black) transparent transparent;
 }
 
@@ -123,4 +115,14 @@ input:checked + .slider:before {
     margin-bottom: 0px;
     background-color: var(--pastel-blue);
     box-shadow: none; 
+}
+
+@media screen and (max-width: 1000px) {
+    /* for left pointing arrows when in smaller screen size where they do not turn black and disappear */
+    .timeline-container.dark::before {
+        left: 3.8rem;
+        border: medium solid var(--black);
+        border-width: 0.625rem 0.625rem 0.625rem 0;
+        border-color: transparent var(--black) transparent transparent !important;
+    }
 }
