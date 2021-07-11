@@ -59,3 +59,84 @@ for (let i=0; i<modal.length; i++) {
     modal[i].classList.toggle("hide");
   });
 };
+
+/* dark mode */
+const darkMode = document.querySelector("#darkMode");
+const body = document.querySelector("body");
+const header = document.querySelector(".header");
+const nav_logo = document.querySelector(".nav-logo");
+const nav_link = document.querySelectorAll(".nav-link");
+const nav_menu = document.querySelectorAll(".nav-menu");
+const bar = document.querySelectorAll(".bar");
+const footer = document.querySelector(".footer");
+const menu_item = document.querySelectorAll(".menu__item");
+const timeline = document.querySelectorAll(".timeline-container");
+const content = document.querySelectorAll(".content");
+const polaroid = document.querySelectorAll(".polaroid");
+
+darkMode.addEventListener("click", changeMode);
+
+function enableDarkMode() {
+  body.classList.add("dark");
+  header.classList.add("dark");
+  nav_logo.classList.add("dark");
+  for (let i=0; i<nav_link.length; i++){
+    nav_link[i].classList.add("dark");
+  }
+  for (let i=0; i<nav_menu.length; i++){
+    nav_menu[i].classList.add("dark");
+  }
+  for (let i=0; i<bar.length; i++){
+    bar[i].classList.add("dark");
+  }
+  footer.classList.add("dark");
+  for (let i=0; i<menu_item.length; i++){
+    menu_item[i].classList.add("dark");
+  }
+  for (let i=0; i<timeline.length; i++){
+    timeline[i].classList.add("dark");
+  }
+  for (let i=0; i<content.length; i++){
+    content[i].classList.add("dark");
+  }
+  for (let i=0; i<polaroid.length; i++){
+    polaroid[i].classList.add("dark");
+  }
+}
+
+function disableDarkMode() {
+  body.classList.remove("dark");
+  header.classList.remove("dark");
+  nav_logo.classList.remove("dark");
+  for (let i=0; i<nav_link.length; i++){
+    nav_link[i].classList.remove("dark");
+  }
+  for (let i=0; i<nav_menu.length; i++){
+    nav_menu[i].classList.remove("dark");
+  }
+  for (let i=0; i<bar.length; i++){
+    bar[i].classList.remove("dark");
+  }
+  footer.classList.remove("dark");
+  for (let i=0; i<menu_item.length; i++){
+    menu_item[i].classList.remove("dark");
+  }
+  for (let i=0; i<timeline.length; i++){
+    timeline[i].classList.remove("dark");
+  }
+  for (let i=0; i<content.length; i++){
+    content[i].classList.remove("dark");
+  }
+  for (let i=0; i<polaroid.length; i++){
+    polaroid[i].classList.remove("dark");
+  }
+}
+
+function changeMode() {
+  if (darkMode.checked) {
+    disableDarkMode();
+  } 
+  else {
+    enableDarkMode();
+  }
+}
