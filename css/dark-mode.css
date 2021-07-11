@@ -28,6 +28,14 @@ body.dark,
     border-color: transparent var(--black) transparent transparent;
 }
 
+/* for left pointing arrows when in smaller screen size where they do not turn black and disappear */
+.timeline-container.dark::before {
+    left: 3.8rem;
+    border: medium solid var(--black);
+    border-width: 0.625rem 0.625rem 0.625rem 0;
+    border-color: transparent var(--black) transparent transparent;
+}
+
 .bar.dark {
     background-color: var(--dark-white);
 }
