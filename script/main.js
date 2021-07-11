@@ -71,6 +71,8 @@ const bar = document.querySelectorAll(".bar");
 const footer = document.querySelector(".footer");
 const menu_item = document.querySelectorAll(".menu__item");
 const timeline = document.querySelectorAll(".timeline-container");
+const right = document.querySelectorAll(".right");
+const left = document.querySelectorAll(".left");
 const content = document.querySelectorAll(".content");
 const polaroid = document.querySelectorAll(".polaroid");
 
@@ -95,6 +97,12 @@ function enableDarkMode() {
   }
   for (let i=0; i<timeline.length; i++){
     timeline[i].classList.add("dark");
+  }
+  for (let i=0; i<right.length; i++){
+    right[i].classList.add("dark");
+  }
+  for (let i=0; i<left.length; i++){
+    left[i].classList.add("dark");
   }
   for (let i=0; i<content.length; i++){
     content[i].classList.add("dark");
@@ -123,6 +131,12 @@ function disableDarkMode() {
   }
   for (let i=0; i<timeline.length; i++){
     timeline[i].classList.remove("dark");
+  }
+  for (let i=0; i<right.length; i++){
+    right[i].classList.remove("dark");
+  }
+  for (let i=0; i<left.length; i++){
+    left[i].classList.remove("dark");
   }
   for (let i=0; i<content.length; i++){
     content[i].classList.remove("dark");

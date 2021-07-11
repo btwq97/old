@@ -20,6 +20,14 @@ body.dark,
     color: var(--dark-white);
 }
 
+.left.dark::before {
+    border-color: transparent transparent transparent var(--black);
+}
+
+.right.dark::before {
+    border-color: transparent var(--black) transparent transparent;
+}
+
 .bar.dark {
     background-color: var(--dark-white);
 }
