@@ -27,7 +27,7 @@ if (document.getElementsByClassName('typing').length > 0) {
     var i = 0;
     var txt = `./about_me
     
-    Hello! I am currently an undergraduate pursuing a Bachelor's Degree in Electrical Engineering. My specialization is in Internet of Things, 5G and Next Generation Networks and Advanced Electronics.
+Hello! I am currently an undergraduate pursuing a Bachelor's Degree in Electrical Engineering. My specialization is in Internet of Things, 5G and Next Generation Networks and Advanced Electronics.
 
 I started picking up programming classes as an elective in my University. Even though it was hard to grasp the concepts initially, I find myself enjoying the modules and wanting to learn more. As time goes by, I honed my skills in the fields of embedded systems and firmware development and I aspire to work in these industries in the future.
 
