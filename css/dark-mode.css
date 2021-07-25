@@ -14,6 +14,11 @@ body.dark,
     color: var(--dark-white);
 }
 
+.timeline-container.dark::after,
+.timeline.dark::after {
+    background-color: var(--black);
+}
+
 .nav-logo.dark,
 .nav-link.dark,
 .menu__item.dark > a {
