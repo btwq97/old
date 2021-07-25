@@ -395,6 +395,15 @@ main {
     list-style-position: inside;
 }
 
+.indented {
+    margin-left: 1.5rem;
+}
+
+.circle-bullet {
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
 /* footer */
 .footer {
     text-align: center;
