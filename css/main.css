@@ -56,7 +56,10 @@ body {
     color: var(--pastel-blue);
 }
 
-#job::before, #project::before, #intro::before { 
+#job::before,
+#project::before,
+#course-project::before,
+#intro::before { 
     display: block; 
     content: ""; 
     height: 10vh; 
@@ -377,8 +380,13 @@ main {
     text-align: left;
 }
 
-.role, .timeline-role {
+.timeline-role {
+    font-size: 2rem;
+}
+
+.role {
     font-size: 1.5rem;
+    text-decoration: underline;
 }
 
 .company, .date, .desc,
@@ -439,7 +447,6 @@ main {
 }
 /*=========================== miscellaneous ===========================*/
 .gallery {
-    max-height: 25rem;
     margin-bottom: 1.25rem; /* adds space at the bottom of gallery */
 }
 
@@ -474,6 +481,24 @@ main {
   transform: scale(1.01);
 }
 
+/* table */
+table, th, td {
+    padding: 0.3rem;
+}
+
+.mode {
+    border: 1px solid var(--black);
+}
+
+table {
+    margin-bottom: 0.5rem;
+}
+
+.center {
+    margin-right: auto;
+    margin-left: auto;
+}
+
 /* pop up */
 .popImg {
     border-radius: 0.325rem;
@@ -502,9 +527,8 @@ main {
 .modal-content {
     margin: auto;
     display: block;
-    width: 18.75rem; /* adjusts the dimensions of pop up image */
-    height: 18.75rem;
-    max-width: 18.75rem;
+    width: 25rem; /* adjusts the dimensions of pop up image */
+    height: 25rem;
 }
 
 /* Caption of Modal Image */
@@ -612,6 +636,10 @@ main {
     .right {
         left: 0%;
     }
+    
+    .timeline-role {
+        font-size: 1.5rem;
+    }    
 }
 /* tablets */
 @media screen and (max-width: 768px) {

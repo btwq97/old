@@ -80,6 +80,7 @@ const right = document.querySelectorAll(".right");
 const left = document.querySelectorAll(".left");
 const content = document.querySelectorAll(".content");
 const polaroid = document.querySelectorAll(".polaroid");
+const table = document.querySelectorAll(".mode");
 
 darkMode.addEventListener("click", changeMode);
 
@@ -87,6 +88,7 @@ function enableDarkMode() {
   body.classList.add("dark");
   header.classList.add("dark");
   nav_logo.classList.add("dark");
+
   for (let i=0; i<nav_link.length; i++){
     nav_link[i].classList.add("dark");
   }
@@ -116,12 +118,16 @@ function enableDarkMode() {
   for (let i=0; i<polaroid.length; i++){
     polaroid[i].classList.add("dark");
   }
+  for (let i=0; i<polaroid.length; i++){
+    table[i].classList.add("dark");
+  }
 }
 
 function disableDarkMode() {
   body.classList.remove("dark");
   header.classList.remove("dark");
   nav_logo.classList.remove("dark");
+
   for (let i=0; i<nav_link.length; i++){
     nav_link[i].classList.remove("dark");
   }
@@ -150,6 +156,9 @@ function disableDarkMode() {
   }
   for (let i=0; i<polaroid.length; i++){
     polaroid[i].classList.remove("dark");
+  }
+  for (let i=0; i<polaroid.length; i++){
+    table[i].classList.remove("dark");
   }
 }
 
