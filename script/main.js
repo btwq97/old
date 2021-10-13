@@ -27,15 +27,13 @@ if (document.getElementsByClassName('typing').length > 0) {
     var i = 0;
     var txt = `./about_me
     
-Hello! I am currently an undergraduate pursuing a Bachelor's Degree in Electrical Engineering. My specialization is in Internet of Things, 5G and Next Generation Networks and Advanced Electronics.
-
-I started picking up programming classes as an elective in my University. Even though it was hard to grasp the concepts initially, I find myself enjoying the modules and wanting to learn more. As time goes by, I honed my skills in the fields of embedded systems and firmware development and I aspire to work in these industries in the future.
+Hello! I am currently an undergraduate pursuing a Bachelor's Degree in Electrical Engineering and I specialize in the Internet of Things. My industrial tracks are in 5G and Next Generation Networks and Advanced Electronics.
 
 My professional internship experience includes firmware development, data collection from IoT sensors, designing of cloud architecture and dashboard design. I am well versed in popular communication protocols such as MQTT and Modbus, and have actual work experiences with time-series database such as AWS Timestream and TimescaleDB. As both my internships happens to be a startup, it gave me the opportunity to have full ownership over the projects and I get to see them from development to production.
 
 In my free time, I work on some side projects such as 2D game development using SFML and picked up some basic front end development using HTML5 and CSS3.
 
-Interests: Cloud Infrastructure, IoT, Firmware Development, Embedded Systems`;
+Interests: Cloud Infrastructure, IoT, Embedded Systems, Linux, Scripting, Automation`;
     
     var speed = 10;
   
