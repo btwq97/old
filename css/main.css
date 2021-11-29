@@ -481,6 +481,17 @@ main {
   transform: scale(1.01);
 }
 
+/* video */
+.video-demo {
+    max-width: 80%;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%; 
+
+    max-height: 31.25rem;
+    height: auto;
+}
+
 /* table */
 table, th, td {
     padding: 0.3rem;
