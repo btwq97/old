@@ -172,7 +172,7 @@
                             </ul>
                             <li class="sq-bullet">The demonstration below showcases the features mentioned above:</li>
                         </ul>
-                        <video class="video-demo" controls="controls" preload="none" onclick="this.paused ? this.play() : this.pause();">
+                        <video class="video-demo" controls="controls" preload="metadata" onclick="this.paused ? this.play() : this.pause();">
                             <source type="video/mp4" src="images/cs3237/cc2650_lab6.mp4">
                         </video>
                         <ul class="desc">
@@ -235,7 +235,7 @@
                             </ul>
                             <li class="sq-bullet">In the demo below, it showcases how the 7-segment display would indicate operational states when the push-buttons are pressed:</li>
                         </ul>
-                        <video class="video-demo" controls="controls" preload="none" onclick="this.paused ? this.play() : this.pause();">
+                        <video class="video-demo" controls="controls" preload="metadata" onclick="this.paused ? this.play() : this.pause();">
                             <source type="video/mp4" src="images/ee2026/demo.mp4">
                         </video>
                     </div>
@@ -370,6 +370,67 @@
             
             <div id="project" class="project">
                 <h1 class="title"><span class="colour orange-highlight">Personal</span> Projects</h1>
+                
+                <div class="feature">
+                    <h3 class="role">ASL and Gesture Recognition</h3>
+                    <div class="gallery">
+                        <div class="row">
+                            <div class="polaroid">
+                                <img class="popImg" src="images/cs3237/thanks.png" alt="Thank You Hand Sign">
+                            </div>
+                            <!-- Pop up image -->
+                            <div class="modal hide">
+                                <img class="modal-content" src="images/cs3237/thanks.png" alt="Thank You Hand Sign">
+                                <div class="caption">Thank You Hand Sign</div>
+                            </div>
+
+                            <div class="polaroid">
+                                <img class="popImg" src="images/cs3237/please.png" alt="Please Hand Sign">
+                            </div>
+                            <div class="modal hide">
+                                <img class="modal-content" src="images/cs3237/please.png" alt="Please Hand Sign">
+                                <div class="caption">Please Hand Sign</div>
+                            </div>
+
+                            <div class="polaroid">
+                                <img class="popImg" src="images/cs3237/hello.png" alt="Hello Hand Sign">
+                            </div>
+                            <div class="modal hide">
+                                <img class="modal-content" src="images/cs3237/hello.png" alt="Hello Hand Sign">
+                                <div class="caption">Hello Hand Sign</div>
+                            </div>
+
+                            <div class="polaroid">
+                                <img class="popImg" src="images/cs3237/ASL.jpg" alt="ASL Hand Sign">
+                            </div>
+                            <div class="modal hide">
+                                <img class="modal-content" src="images/cs3237/ASL.jpg" alt="Hello Hand Sign">
+                                <div class="caption">ASL Hand Sign</div>
+                            </div>
+                        </div>
+                        <ul class="desc">                          
+                            <li class="sq-bullet">In this project, we used hand coordinates to recognise American Sign Language (ASL) using open-source libraries:</li>              
+                            <ul class="indented">
+                                <li class="circle-bullet">Opening of laptop camera using OpenCV API.</li>
+                                <li class="circle-bullet">Capturing of hand coordinate using Mediapipe API.</li>
+                            </ul>
+                            <li class="sq-bullet">We also utilised the TI RTOS CC2650 SensorTag to capture hand gait movements. The sensors used are:</li>
+                            <ul class="indented">
+                                <li class="circle-bullet">Accelerometer.</li>
+                                <li class="circle-bullet">Gyroscope.</li>
+                            </ul>
+                            <li class="sq-bullet">The data captured are fed into a machine learning model for classification. The trained models are situated on a cloud server and data are transmitted over MQTT.</li>
+                            <li class="sq-bullet">A pre-recorded demonstration of me performing the various hand signs can be seen in this video below:</li>
+                        </ul>
+                        <video class="video-demo" controls="controls" preload="metadata" onclick="this.paused ? this.play() : this.pause();">
+                            <source type="video/mp4" src="images/cs3237/cs3237_final_demo.mp4">
+                        </video>
+                        <ul class="desc"> 
+                            <li class="sq-bullet">Please find repository to the application <a href="https://github.com/btwq97/ASL_Gesture_Recognition" target="_blank"><span class="toolTip orange-highlight">here<span class="toolTipText orange-highlight">Learn more</span></span></a>.</li>
+                        </ul>
+                    </div>
+                </div>
+
                 <div class="feature">
                     <h3 class="role">Classical Tetris</h3>
                     <div class="gallery">
