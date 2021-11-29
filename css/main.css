@@ -56,19 +56,24 @@ body {
     color: var(--pastel-blue);
 }
 
-#job::before,
-#project::before,
-#course-project::before,
-#intro::before { 
+/* to ensure that the id nav land on the jd itself due to the presence of a fixed header*/
+.anchor::before { 
     display: block; 
-    content: ""; 
+    content: "";
     height: 10vh; 
     visibility: hidden; 
     pointer-events: none;
+
+    margin-top: -10vh;
 }
 
-#intro::before {
-    margin-top: -10vh;
+/* to equalise the top portion of the timeline with the bottom */
+#RESYNC::after {
+    display: block; 
+    content: "";
+    height: 10vh; 
+    visibility: hidden; 
+    pointer-events: none;
 }
 
 /*=========================== header ===========================*/
@@ -91,6 +96,38 @@ body {
 
 .nav-item {
     list-style-type: none;
+}
+
+/* dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--darker-white);
+    box-shadow: 0rem 0.5rem 1rem 0rem rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: var(--black);
+    padding: 0.75rem 1rem;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: var(--pastel-blue);
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
 .header  a {
@@ -288,6 +325,9 @@ main {
     position: relative;
     max-width: 100%;
     width: 100%;
+
+    /* to equalise the top portion of the timeline with the bottom */
+    margin-top: 10vh;
 }
   
 /* The actual timeline (the vertical ruler) */
