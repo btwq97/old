@@ -15,22 +15,32 @@
         <nav class="navbar">
             <a href="#intro" class="nav-logo">Benjamin</a>
             <ul class="nav-menu">
-                <li class="nav-item">
-                    <li class="nav-item dropdown">
-                        <a href="html/job_exp.html" class="nav-link">Job Experience</a>
-                        <div class="dropdown-content">
-                            <a href="html/job_exp.html#SLL">Sustainable Living Lab</a>
-                            <a href="html/job_exp.html#HYDROLEAP">Hydroleap Private Limited</a>
-                            <a href="html/job_exp.html#RLL">Raffles Learning Lab</a>
-                            <a href="html/job_exp.html#RESYNC">Resync Technologies Private Limited</a>
-                        </div>
-                    </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link">Job Experience</a>
+                    <div class="dropdown-content">
+                        <a href="html/job_exp/sll.html#SLL">Sustainable Living Lab</a>
+                        <a href="html/job_exp/hydroleap.html#HYDROLEAP">Hydroleap Private Limited</a>
+                        <a href="html/job_exp/rll.html#RLL">Raffles Learning Lab</a>
+                        <a href="html/job_exp/resync.html#RESYNC">Resync Technologies Private Limited</a>
+                    </div>
                 </li>
-                <li class="nav-item">
-                    <a href="html/course_proj.html" class="nav-link">Course Projects</a>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link">Course Projects</a>
+                    <div class="dropdown-content">
+                        <a href="html/course_proj/cs3237.html">CS3237</a>
+                        <a href="html/course_proj/ee2026.html">EE2026</a>
+                        <a href="html/course_proj/ee2028.html">EE2028</a>
+                        <a href="html/course_proj/ee2033.html">EE2033</a>
+                    </div>
                 </li>
-                <li class="nav-item">
-                    <a href="html/personal_proj.html" class="nav-link">Personal Projects</a>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link">Personal Projects</a>
+                    <div class="dropdown-content">
+                        <a href="html/personal_proj/ml.html">ASL Recognition with Hand Gestures</a>
+                        <a href="html/personal_proj/racer.html">Race Car Game</a>
+                        <a href="html/personal_proj/tetris.html">Tetis Game</a>
+                        <a href="html/personal_proj/website.html">Website</a>
+                    </div>
                 </li>
             </ul>
             <div class="hamburger">
@@ -40,13 +50,6 @@
             </div>
         </nav>
     </header>
-
-    <div class="buttonBox">
-        <label class="switch">
-            <input type="checkbox" id="darkMode" checked>
-            <span class="slider round"></span>
-        </label>
-    </div>
 
     <main>
         <div id="intro" class="intro">
@@ -61,7 +64,26 @@
         <div class="callToAction">
             <a href="resume/Tan_Wei_Qiang_Benjamin.pdf" class="button--secondary" target="_blank">Download Resume</a>
         </div>
+    </main>    
 
+    <footer id="footer" class="footer">
+        <h1 class="title"><span class="colour orange-highlight">Contact</span> Me</h1>
+        <ul>
+            <li class="menu__item">
+                <a class="footer-links" href="https://www.linkedin.com/in/tanweiqiang/" target="_blank">
+                    <i class="fa fa-linkedin" target="_blank"></i> 
+                    LinkedIn
+                </a>
+            </li>
+            <li class="menu__item">
+                <a class="footer-links" href="https://www.github.com/btwq97" target="_blank">
+                    <i class="fa fa-github"></i> 
+                    Github
+                </a>
+            </li>
+        </ul>
+    </footer>
+    
     <script src="script/main.js"></script>
     <!-- for terminal -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- for useful icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/railscasts.min.css"> <!-- for terminal -->
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/dark-mode.css">
+    <title>Benjamin's Resume</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="../../index.html" class="nav-logo">Benjamin</a>
+            <ul class="nav-menu">
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link">Job Experience</a>
+                    <div class="dropdown-content">
+                        <a href="../job_exp/sll.html#SLL">Sustainable Living Lab</a>
+                        <a href="../job_exp/hydroleap.html#HYDROLEAP">Hydroleap Private Limited</a>
+                        <a href="../job_exp/rll.html#RLL">Raffles Learning Lab</a>
+                        <a href="../job_exp/resync.html#RESYNC">Resync Technologies Private Limited</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link">Course Projects</a>
+                    <div class="dropdown-content">
+                        <a href="../course_proj/cs3237.html">CS3237</a>
+                        <a href="../course_proj/ee2026.html">EE2026</a>
+                        <a href="../course_proj/ee2028.html">EE2028</a>
+                        <a href="../course_proj/ee2033.html">EE2033</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link">Personal Projects</a>
+                    <div class="dropdown-content">
+                        <a href="ml.html">ASL Recognition with Hand Gestures</a>
+                        <a href="racer.html">Race Car Game</a>
+                        <a href="#" class="current">Tetis Game</a>
+                        <a href="website.html">Website</a>
+                    </div>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>        
+        <div class="container">
+            <div id="project" class="project">
+                <h1 class="title"><span class="colour orange-highlight">Personal</span> Projects</h1>
+                <div class="feature">
+                    <h3 class="role">Classical Tetris</h3>
+                    <div class="gallery">
+                        <div class="row">
+                            <div class="polaroid">
+                                <img class="popImg" src="../../images/tetris/tetris-play.png" alt="Classical Tetris Loading Screen">
+                            </div>
+                            <!-- Pop up image -->
+                            <div class="modal hide">
+                                <img class="modal-content" src="../../images/tetris/tetris-play.png" alt="Classical Tetris Loading Screen">
+                                <div class="caption">Classical Tetris Loading Screen</div>
+                            </div>
+            
+                            <div class="polaroid">
+                                <img class="popImg" src="../../images/tetris/tetris-game.png" alt="Classical Tetris Gameplay">
+                            </div>
+                            <div class="modal hide">
+                                <img class="modal-content" src="../../images/tetris/tetris-game.png" alt="Classical Tetris Loading Screen">
+                                <div class="caption">Classical Tetris Gameplay</div>
+                            </div>
+            
+                            <div class="polaroid">
+                                <img class="popImg" src="../../images/tetris/tetris-retry.png" alt="Classical Tetris Gameover">
+                            </div>
+                            <div class="modal hide">
+                                <img class="modal-content" src="../../images/tetris/tetris-retry.png" alt="Classical Tetris Loading Screen">
+                                <div class="caption">Classical Tetris End Game Screen</div>
+                            </div>
+                        </div>
+                        <ul class="desc">
+                            <li class="sq-bullet">Used Simple and Fast Multimedia Library (SFML) to generate window, sprite and audio modules.</li>
+                            <li class="sq-bullet">The demonstration below show cases the gameplay for Tetris:</li>
+                        </ul>
+                        <video class="video-demo" controls="controls" preload="metadata" onclick="this.paused ? this.play() : this.pause();">
+                            <source type="video/mp4" src="../../images/tetris/tetris.mp4">
+                        </video>
+                        <ul class="desc">
+                            <li class="sq-bullet">Please find repository to Tetris Game <a href="https://github.com/btwq97/Tetris" target="_blank"><span class="toolTip orange-highlight">here<span class="toolTipText orange-highlight">Learn more</span></span></a>.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer id="footer" class="footer">
+        <h1 class="title"><span class="colour orange-highlight">Contact</span> Me</h1>
+        <ul>
+            <li class="menu__item">
+                <a class="footer-links" href="https://www.linkedin.com/in/tanweiqiang/" target="_blank">
+                    <i class="fa fa-linkedin" target="_blank"></i> 
+                    LinkedIn
+                </a>
+            </li>
+            <li class="menu__item">
+                <a class="footer-links" href="https://www.github.com/btwq97" target="_blank">
+                    <i class="fa fa-github"></i> 
+                    Github
+                </a>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="../../script/main.js"></script>
+</body>
+</html>

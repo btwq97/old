@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- for useful icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/railscasts.min.css"> <!-- for terminal -->
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/dark-mode.css">
+    <title>Benjamin's Resume</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="../../index.html" class="nav-logo">Benjamin</a>
+            <ul class="nav-menu">
+                <li class="nav-item dropdown">
+                    <a href="../job_exp.html" class="nav-link">Job Experience</a>
+                    <div class="dropdown-content">
+                        <a href="../job_exp.html#SLL">Sustainable Living Lab</a>
+                        <a href="../job_exp.html#HYDROLEAP">Hydroleap Private Limited</a>
+                        <a href="../job_exp.html#RLL">Raffles Learning Lab</a>
+                        <a href="../job_exp.html#RESYNC">Resync Technologies Private Limited</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link">Course Projects</a>
+                    <div class="dropdown-content">
+                        <a href="cs3237.html">CS3237</a>
+                        <a href="#" class="current">EE2026</a>
+                        <a href="ee2028.html">EE2028</a>
+                        <a href="ee2033.html">EE2033</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link">Personal Projects</a>
+                    <div class="dropdown-content">
+                        <a href="../personal_proj/ml.html">ASL Recognition with Hand Gestures</a>
+                        <a href="../personal_proj/racer.html">Race Car Game</a>
+                        <a href="../personal_proj/tetris.html">Tetis Game</a>
+                        <a href="../personal_proj/website.html">Website</a>
+                    </div>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>        
+        <div class="container">
+            <div class="project">
+                <h1 class="title"><span class="colour orange-highlight">Course</span> Projects</h1>
+                <div class="feature">
+                    <h3 class="role">EE2026 - Waveform Generator using FPGA</h3>                      
+                    <div class="gallery">
+                        <div class="row">
+                            <div class="polaroid">
+                                <img class="popImg" src="../../images/ee2026/fpga.png" alt="Diligent Basys 3 FPGA Baseboard">
+                            </div>
+                            <!-- Pop up image -->
+                            <div class="modal hide">
+                                <img class="modal-content" src="../../images/ee2026/fpga.png" alt="Diligent Basys 3 FPGA Baseboard">
+                                <div class="caption">Diligent Basys 3 FPGA Baseboard</div>
+                            </div>
+            
+                            <div class="polaroid">
+                                <img class="popImg" src="../../images/ee2026/sinusoid-wave.png" alt="Sinusoidal Waveform">
+                            </div>
+                            <div class="modal hide">
+                                <img class="modal-content" src="../../images/ee2026/sinusoid-wave.png" alt="Sinusoidal Waveform">
+                                <div class="caption">Sinusoidal Waveform</div>
+                            </div>
+            
+                            <div class="polaroid">
+                                <img class="popImg" src="../../images/ee2026/ramp-waveform.png" alt="Ramp Waveform">
+                            </div>
+                            <div class="modal hide">
+                                <img class="modal-content" src="../../images/ee2026/ramp-waveform.png" alt="Ramp Waveform">
+                                <div class="caption">Ramp Waveform</div>
+                            </div>
+    
+                            <div class="polaroid">
+                                <img class="popImg" src="../../images/ee2026/led-peripherals.png" alt="Led Peripherals">
+                            </div>
+                            <div class="modal hide">
+                                <img class="modal-content" src="../../images/ee2026/led-peripherals.png" alt="Led Peripherals">
+                                <div class="caption">Varying LED levels with varying ambient sound</div>
+                            </div>
+    
+                            <div class="polaroid">
+                                <img class="popImg" src="../../images/ee2026/switch-peripherals.png" alt="Switch Peripherals">
+                            </div>
+                            <div class="modal hide">
+                                <img class="modal-content" src="../../images/ee2026/switch-peripherals.png" alt="Switch Peripherals">
+                                <div class="caption">Switches to indicate different operating states</div>
+                            </div>
+                        </div>
+                        <ul class="desc">
+                            <li class="sq-bullet">This was a pair work between <u>two</u> students. My contributions were as follows:</li>
+                            <ul class="indented">
+                                <li class="circle-bullet">Used embedded LED lights to indicate ambient noise level.</li>
+                                <li class="circle-bullet">Used embedded push-buttons and 7-segment display to indicate operational states.</li>
+                                <li class="circle-bullet">Changed waveform colours on the VGA display.</li>
+                            </ul>
+                            <li class="sq-bullet">In the demo below, it showcases how the 7-segment display would indicate operational states when the push-buttons are pressed:</li>
+                        </ul>
+                        <video class="video-demo" controls="controls" preload="metadata" onclick="this.paused ? this.play() : this.pause();">
+                            <source type="video/mp4" src="../../images/ee2026/demo.mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer id="footer" class="footer">
+        <h1 class="title"><span class="colour orange-highlight">Contact</span> Me</h1>
+        <ul>
+            <li class="menu__item">
+                <a class="footer-links" href="https://www.linkedin.com/in/tanweiqiang/" target="_blank">
+                    <i class="fa fa-linkedin" target="_blank"></i> 
+                    LinkedIn
+                </a>
+            </li>
+            <li class="menu__item">
+                <a class="footer-links" href="https://www.github.com/btwq97" target="_blank">
+                    <i class="fa fa-github"></i> 
+                    Github
+                </a>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="../../script/main.js"></script>
+</body>
+</html>

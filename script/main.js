@@ -4,21 +4,13 @@ const navMenu = document.querySelector(".nav-menu");
 const logoNav = document.querySelector(".nav-logo");
 
 hamburger.addEventListener("click", mobileMenu);
+navMenu.addEventListener("click", mobileMenu);
+logoNav.addEventListener("click", mobileMenu);
 
 function mobileMenu() {
     hamburger.classList.toggle("active");
     navMenu.classList.toggle("active");
     logoNav.classList.toggle("active");
-}
-
-const navLink = document.querySelectorAll(".nav-link, .nav-logo, .dropdown");
-
-navLink.forEach(n => n.addEventListener("click", closeMenu));
-
-function closeMenu() {
-    hamburger.classList.remove("active");
-    navMenu.classList.remove("active");
-    logoNav.classList.remove("active");
 }
 
 /* terminal */
@@ -62,109 +54,3 @@ for (let i=0; i<modal.length; i++) {
   });
 };
 
-/* dark mode */
-const darkMode = document.querySelector("#darkMode");
-const body = document.querySelector("body");
-const header = document.querySelector(".header");
-const nav_logo = document.querySelector(".nav-logo");
-const nav_link = document.querySelectorAll(".nav-link");
-const nav_menu = document.querySelectorAll(".nav-menu");
-const bar = document.querySelectorAll(".bar");
-const footer = document.querySelector(".footer");
-const menu_item = document.querySelectorAll(".menu__item");
-const timeline = document.querySelectorAll(".timeline-container");
-const timeline_line = document.querySelector(".timeline");
-const right = document.querySelectorAll(".right");
-const left = document.querySelectorAll(".left");
-const content = document.querySelectorAll(".content");
-const polaroid = document.querySelectorAll(".polaroid");
-const table = document.querySelectorAll(".mode");
-
-darkMode.addEventListener("click", changeMode);
-
-function enableDarkMode() {
-  body.classList.add("dark");
-  header.classList.add("dark");
-  nav_logo.classList.add("dark");
-
-  for (let i=0; i<nav_link.length; i++){
-    nav_link[i].classList.add("dark");
-  }
-  for (let i=0; i<nav_menu.length; i++){
-    nav_menu[i].classList.add("dark");
-  }
-  for (let i=0; i<bar.length; i++){
-    bar[i].classList.add("dark");
-  }
-  footer.classList.add("dark");
-  for (let i=0; i<menu_item.length; i++){
-    menu_item[i].classList.add("dark");
-  }
-  for (let i=0; i<timeline.length; i++){
-    timeline[i].classList.add("dark");
-  }
-  timeline_line.classList.add("dark");
-  for (let i=0; i<right.length; i++){
-    right[i].classList.add("dark");
-  }
-  for (let i=0; i<left.length; i++){
-    left[i].classList.add("dark");
-  }
-  for (let i=0; i<content.length; i++){
-    content[i].classList.add("dark");
-  }
-  for (let i=0; i<polaroid.length; i++){
-    polaroid[i].classList.add("dark");
-  }
-  for (let i=0; i<polaroid.length; i++){
-    table[i].classList.add("dark");
-  }
-}
-
-function disableDarkMode() {
-  body.classList.remove("dark");
-  header.classList.remove("dark");
-  nav_logo.classList.remove("dark");
-
-  for (let i=0; i<nav_link.length; i++){
-    nav_link[i].classList.remove("dark");
-  }
-  for (let i=0; i<nav_menu.length; i++){
-    nav_menu[i].classList.remove("dark");
-  }
-  for (let i=0; i<bar.length; i++){
-    bar[i].classList.remove("dark");
-  }
-  footer.classList.remove("dark");
-  for (let i=0; i<menu_item.length; i++){
-    menu_item[i].classList.remove("dark");
-  }
-  for (let i=0; i<timeline.length; i++){
-    timeline[i].classList.remove("dark");
-  }
-  timeline_line.classList.remove("dark");
-  for (let i=0; i<right.length; i++){
-    right[i].classList.remove("dark");
-  }
-  for (let i=0; i<left.length; i++){
-    left[i].classList.remove("dark");
-  }
-  for (let i=0; i<content.length; i++){
-    content[i].classList.remove("dark");
-  }
-  for (let i=0; i<polaroid.length; i++){
-    polaroid[i].classList.remove("dark");
-  }
-  for (let i=0; i<polaroid.length; i++){
-    table[i].classList.remove("dark");
-  }
-}
-
-function changeMode() {
-  if (darkMode.checked) {
-    disableDarkMode();
-  } 
-  else {
-    enableDarkMode();
-  }
-}
