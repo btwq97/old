@@ -461,7 +461,7 @@ main {
 /* footer */
 .footer {
     text-align: center;
-    background-color: var(--darker-white);
+    background-color: var(--pastel-blue);
     color: var(--black);
     font-family: var(--title-font);
 
@@ -471,6 +471,14 @@ main {
 
     max-height: 30vh;
     height: auto;
+
+    max-width: 100vw;
+    width: 100vw;
+}
+
+.copyright {
+    font-size: 1rem;
+    font-family: var(--desc-font);
 }
 
 .menu__item {
@@ -488,8 +496,7 @@ main {
 }
 
 .menu__item > a:hover {
-    color: var(--pastel-blue);
-    text-shadow: var(--glow);
+    color: var(--orange);
 }
 /*=========================== miscellaneous ===========================*/
 .gallery {
