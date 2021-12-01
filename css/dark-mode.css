@@ -24,14 +24,6 @@ body.dark,
     color: var(--dark-white);
 }
 
-.dropdown-content.dark a:hover {
-    background-color: var(--orange);
-}
-
-.current.dark {
-    background-color: var(--pastel-blue);
-}
-
 .timeline-container.dark::after,
 .timeline.dark::after {
     background-color: var(--black);

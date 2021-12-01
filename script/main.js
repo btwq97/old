@@ -58,7 +58,7 @@ const toggleDarkMode = document.querySelector("#darkMode");
 // For body, header, footer
 const mainBulk = document.querySelectorAll("body, .header, .nav-logo, .nav-link, .nav-menu, .bar, .menu__item");
 // For dropdowns
-const dropdown = document.querySelectorAll(".dropdown-content, .copyright, .current");
+const dropdown = document.querySelectorAll(".dropdown-content, .copyright");
 // For modal/polaroids
 const modalPopUp = document.querySelectorAll(".content, .polaroid");
 // For timeline, and table in ee2033
