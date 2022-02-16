@@ -1,15 +1,12 @@
 /* nav */
 const hamburger = document.querySelector(".hamburger");
-const menu = document.querySelectorAll(".nav-menu, .nav-logo");
+const menu = document.querySelector(".nav-menu");
 
 hamburger.addEventListener("click", mobileMenu);
-menu.forEach(item => item.addEventListener("click", mobileMenu));
 
 function mobileMenu() {
   hamburger.classList.toggle("active");
-  for (let i=0; i<menu.length; i++){
-    menu[i].classList.toggle("active");
-  }
+  menu.classList.toggle("active");
 }
 
 /* terminal */
