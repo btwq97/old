@@ -1,7 +1,7 @@
 :root {
-    --transition-time: 0.15s;
-    --dark-bg: #292c2e;
-    --dark-white: #e8e6e3;
+  --transition-time: 0.15s;
+  --dark-bg: #292c2e;
+  --dark-white: #e8e6e3;
 }
 
 /* change colours */
@@ -11,140 +11,139 @@ body.dark,
 .timeline-container.dark,
 .nav-menu.dark,
 .dropdown-content.dark {
-    background-color: var(--dark-bg);
-    color: var(--dark-white);
+  background-color: var(--dark-bg);
+  color: var(--dark-white);
 }
 
 .dropdown-content.dark {
-    box-shadow: 0rem 0rem 0.3125rem 0rem var(--dark-white);
+  box-shadow: 0rem 0rem 0.3125rem 0rem var(--dark-white);
 }
 
 .dropdown-content.dark > a,
 .copyright.dark {
-    color: var(--dark-white);
+  color: var(--dark-white);
 }
 
 .timeline-container.dark::after,
 .timeline.dark::after {
-    background-color: var(--black);
+  background-color: var(--black);
 }
 
 .nav-logo.dark,
 .nav-link.dark,
 .menu__item.dark > a {
-    color: var(--dark-white);
+  color: var(--dark-white);
 }
 
 .timeline-container.left.dark::before {
-    border-color: transparent transparent transparent var(--black);
+  border-color: transparent transparent transparent var(--black);
 }
 
 .timeline-container.right.dark::before {
-    border-color: transparent var(--black) transparent transparent;
+  border-color: transparent var(--black) transparent transparent;
 }
 
 .bar.dark {
-    background-color: var(--dark-white);
+  background-color: var(--dark-white);
 }
 
 .content.dark,
 .gallery .row .polaroid.dark {
-    background-color: var(--black);
+  background-color: var(--black);
 }
 
 .mode.dark {
-    border: 1px solid var(--dark-white);
+  border: 1px solid var(--dark-white);
 }
 
 .menu__item.dark > a:hover {
-    color: var(--orange);
+  color: var(--orange);
 }
 /********************/
 .buttonBox {
-    position: fixed;
-    bottom: 0;
-    right: 0;
+  position: fixed;
+  bottom: 0;
+  right: 0;
 
-    margin: 1rem;
+  margin: 1rem;
 
-    z-index: 4;
+  z-index: 4;
 }
 
 .switch {
-    position: relative;
-    display: inline-block;
-    width: 54px;
-    height: 26px;
+  position: relative;
+  display: inline-block;
+  width: 54px;
+  height: 26px;
 }
 
 .switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
+  opacity: 0;
+  width: 0;
+  height: 0;
 }
 .slider {
-    position: absolute;
-    cursor: pointer;
+  position: absolute;
+  cursor: pointer;
 
-    box-shadow: 0 0 5px var(--black);
+  box-shadow: 0 0 5px var(--black);
 
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 
-    -webkit-transition: var(--transition-time);
-    transition: var(--transition-time);
+  -webkit-transition: var(--transition-time);
+  transition: var(--transition-time);
 
-    background-color: var(--dark-white);
-
+  background-color: var(--dark-white);
 }
 .dark .slider {
-    box-shadow: 0 0 5px var(--dark-white);
-    background-color: var(--black);
+  box-shadow: 0 0 5px var(--dark-white);
+  background-color: var(--black);
 }
 
 .slider:before {
-    position: absolute;
-    content: "";
-    height: 20px;
-    width: 20px;
-    left: 4px;
-    bottom: 3px;
-    -webkit-transition: var(--transition-time);
-    transition: var(--transition-time);
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 4px;
+  bottom: 3px;
+  -webkit-transition: var(--transition-time);
+  transition: var(--transition-time);
 }
 
 input:checked + .slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
 }
 .slider.round {
-    border-radius: 34px;
+  border-radius: 34px;
 }
 .slider.round:before {
-    border-radius: 50%;
+  border-radius: 50%;
 }
 .dark .slider.round:before {
-    margin-left: -8px;
-    margin-bottom: 5px;
-    background-color: transparent;
-    box-shadow: 8px 5px 0px 0px var(--dark-white); 
+  margin-left: -8px;
+  margin-bottom: 5px;
+  background-color: transparent;
+  box-shadow: 8px 5px 0px 0px var(--dark-white);
 }
 .slider.round:before {
-    margin-left: 0px;
-    margin-bottom: 0px;
-    background-color: var(--pastel-blue);
-    box-shadow: none; 
+  margin-left: 0px;
+  margin-bottom: 0px;
+  background-color: var(--pastel-blue);
+  box-shadow: none;
 }
 
 @media screen and (max-width: 1000px) {
-    /* for left pointing arrows when in smaller screen size where they do not turn black and disappear */
-    .timeline-container.dark::before {
-        left: 3.8rem;
-        border: medium solid var(--black);
-        border-width: 0.625rem 0.625rem 0.625rem 0;
-        border-color: transparent var(--black) transparent transparent !important;
-    }
+  /* for left pointing arrows when in smaller screen size where they do not turn black and disappear */
+  .timeline-container.dark::before {
+    left: 3.8rem;
+    border: medium solid var(--black);
+    border-width: 0.625rem 0.625rem 0.625rem 0;
+    border-color: transparent var(--black) transparent transparent !important;
+  }
 }
